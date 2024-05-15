@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"  href="/index.css">
+    <title>Register</title>
+
+   
+</head>
+<body style=" background-image: url(images/color\ background\ 001.jpg);background-position:100%;background-size: 100%;">
+   
+<main >
+
+    <section>
+        <form action="/signup" method="post">
+            <fieldset>
+                <div class="textbox1">
+                    <h1>Sign Up</h1>
+
+                    <p>It's quick and easy.</p>
+                </div>   
+
+                <div class="namebox">
+
+                    <input  type="text" placeholder="First name" id="fname" name="firstName" required =""> <br> <br>
+
+                    <input  type="text" placeholder="Last Name"  id="lname" name="lastName"  required="">
+                    
+                </div>
+                    
+                <div style="margin-top: 20px;" class="emailpasswordbox">
+
+                    <input  type="email number" placeholder="Mobile number or Email" id="email" required ="" name="email"> <br> <br>
+
+                    <input type="password" placeholder="New password" id="password" name="password" required="">
+
+                </div>
+
+                <div class="residentbox">
+
+                    <span style="width: 100%;">
+        
+                        <label for="">Country</label>
+
+                        <input type="text" id="country" name="country" required="" >
+
+                    </span>
+
+                    <span style="width: 100%;">
+                       
+                        <label for="">State</label>
+
+                        <input type="text" id="state" name="state" required="">
+
+                    </span>
+
+                    <span style="width: 100%;">
+                       
+                        <label for="">City</label>
+
+                        <input type="text" id="city" name="city" required="">             
+                    </span>
+
+                </div>
+
+                <div class="dobgenderbox">
+
+                    <span style="width: 100%;">
+                       
+                        <label for="">Date of birth</label>
+
+                        <input type="date" id="dob" name="dateOfBirth" required="">
+                    </span>
+
+                    <span style="width: 100%;">
+                       
+                        <label for="">Gender</label> <br>
+
+                        <select name="gender" id="gender">
+
+                            <option value="">select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+
+                        </select>
+                        <!-- <input type="text" id="gender" name="gender" required="">              -->
+                    </span>
+
+                </div>
+
+                <div class="textbox2"> 
+
+                    <p class="footp2">By clicking Sign Up, you agree to our Terms,
+                        <a href=" Privacy Policy and Cookies Policy"> Privacy Policy and Cookies Policy.</a>
+                        You may receive SMS notifications from us and can opt out at any time.
+                    </p>
+
+                </div>
+                    
+                <div style="text-align: center;margin-top: 20px;" class="btnbox"> 
+
+                    <button class="signup" type="submit">Sign Up</button> 
+
+                </div>
+
+            </fieldset>
+        </form>
+
+    </section>
+
+        <!-- <div class="Innovationamicobox">
+
+            <img src="images/Innovationamico.png" alt="" style="width: 50%;">
+
+        </div> -->
+    
+</main>
+
+    <!-- <script>
+        allUsers =[]
+
+        if(localStorage.user){
+            // allUsers =JSON.parse(localStorage.getItem('user'))
+
+            allUsers =JSON.parse (localStorage.getItem('user'))
+            console.log(allUsers)
+        }
+
+        const btn =(event)=>{
+
+            event.preventDefault()
+                let firstName = fname.value
+                let lastName = lname.value
+                let emails  = email.value.toLowerCase()
+                let passwords = password.value
+                let countries = country.value
+                let states = state.value
+                let cities = city.value
+                let dobs = dob.value
+                let genders = gender.value
+
+                if(firstName==''|| lastName== ''|| emails== '' || passwords== '' || countries== '' || states=='' || cities=='' || dobs=='' || genders==''){
+
+
+                    alert('Somthing went wrong!')
+                } else{
+
+                    userDetails ={
+                        firstName: firstName,
+                        lastName:lastName,
+                        email: emails,
+                        password: passwords,
+                        country: countries,
+                        state: states,
+                        city: cities,
+                        dob:dobs,
+                        gender: genders
+                    }
+                    allUsers.push(userDetails)
+                    // console.log(allUsers)
+
+                    fname.value = ''
+                    lname.value =''
+                    email.value =''
+                    password.value = ''
+                    country.value =''
+                    state.value=''
+                    city.value=''
+                    dob.value=''
+                    gender.value=''
+                    
+                    localStorage.setItem('user',JSON.stringify(allUsers))
+                   
+                    
+                }
+                // window.location.href='signin.html'
+               
+                
+
+
+
+        }
+
+          
+    
+   
+
+   
+
+   
+
+        
+    </script> -->
+</body>
+</html>
+
+

@@ -1,0 +1,125 @@
+
+main{  
+    padding: 5px 0px;
+    width:100%;
+    height: fit-content;
+   
+     
+}
+
+
+fieldset{
+    border-radius: 10px;
+    padding: 0px 20px 20px 15px;
+    width: 25%;
+    height: fit-content;
+    border: 5px solid #ff915b;
+    background-size: 100%;
+    background-position: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.textbox1{
+    border-bottom: 2px solid #ff915b;
+     padding-bottom: 5px;
+     color: whitesmoke;
+ 
+}
+.textbox1 h1{
+   /* text-align: start;  */
+   font-size: 30px;
+}
+.textbox1 p{
+/* text-align: start; */
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: smaller;
+}
+
+.namebox{
+    margin-top: 20px;
+    width: 100%;
+    
+}
+
+input{
+    border-radius: 10px;
+    border:2px solid green;
+    width: 95%;
+    padding: 6px 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 450;
+    /* background-color: whitesmoke; */
+    
+   
+}
+
+.residentbox{
+    display: flex; 
+    margin-top: 20px;
+    align-items: center;
+     gap: 15px;
+     width: 100%;
+}
+
+#country{
+    width: 85%;
+}
+#state{
+    width: 85%;
+}
+#city{
+    width: 85%;
+}
+label{
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.dobgenderbox{
+    display: flex;
+     gap: 30px;
+      margin-top: 20px;
+      /* align-items: center; */
+      justify-content: space-between;
+      width: 100%;
+      
+}
+
+#gender{
+    width: 100%;
+    padding:7px 5px;
+    margin-top: 11px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border:2px solid green;
+
+}
+.textbox2{
+    font-size: 12px; 
+    margin-top: 20px;
+    color: whitesmoke;
+    text-align: justify;
+    
+}
+
+.textbox2 p a{
+    color: red;
+}
+
+
+.signup{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;font-weight: bold;
+    background-color: rgb(7, 149, 7); 
+    color: white; border-radius: 8px;
+    border-color: rgb(7, 149, 7);
+    padding: 10px 30px;
+}
+
+
