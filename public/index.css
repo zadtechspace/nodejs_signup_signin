@@ -1,21 +1,21 @@
 body{
     background-image: url(images/color\ background\ 001.jpg);
     background-position:100%;
-    background-size: 100%;
+    background-size: cover;
 }
 
 main{  
     padding: 5px 0px;
     width:100%;
-    height: fit-content;
+    height: 100vh;
    
      
 }
 
 fieldset{
     border-radius: 10px;
-    padding: 0px 20px 20px 15px;
-    width: 25%;
+    padding: 0px 20px 20px 10px;
+    width: 50%;
     height: fit-content;
     border: 5px solid #ff915b;
     background-size: 100%;
