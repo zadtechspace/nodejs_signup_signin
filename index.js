@@ -43,6 +43,10 @@ app.get("/Register", (req, res)=>{
     res.render("index")
 })
 
+app.get("/Login", (req, res)=>{
+  res.render("signin")
+})
+
 app.post("/signup",(req,res)=>{
   console.log(req.body)
 })
@@ -51,9 +55,7 @@ app.post("/signup",(req,res)=>{
 //   res.render("example", {name:"Badmus Lekan Oreoluwa"})
 // })
 
-// app.get("/ejs",(req,res)=>{
-//   const imagesUrl = "/images.petalflower"
-// })
+
 
 
 
