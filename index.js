@@ -13,13 +13,6 @@ app.use(express.urlencoded({extended: true}))
 
 let URI = "mongodb+srv://Zadtechspace:Andsome5$@cluster0.rpxlmmd.mongodb.net/zadtechfirst_db?retryWrites=true&w=majority&appName=Cluster0"
 
-mongoose.connect(URI) .then(()=>{
-  console.log("Database connected");
-}). catch((err)=>{
-  console.log("Database not connected");
-  console.log(err);
-
-})
 
 
 const userSchema = mongoose.Schema({
@@ -45,6 +38,10 @@ app.get("/Login", (req, res)=>{
   res.render("signin")
 })
 
+app.get("/dashboard", (req, res)=>{
+  res.render("dashboard")
+})
+
 app.post("/signup", async (req,res)=>{
   try {
 
@@ -66,7 +63,7 @@ app.post("/login", async (req, res)=>{
     try {
       const checkers = await userModel.findOne({email:req.body.email , password:req.body.password})
         if (checkers.password === req.body.password) {
-          res.render("dashboard")
+          res.redirect("dashboard")
           console.log('Login Successful')
         }
        
@@ -79,11 +76,16 @@ app.post("/login", async (req, res)=>{
 })
 
 
-
-
-
 app.listen(port, () => {
-  console.log(`app is running on port ${port}`)
+  mongoose.connect(URI) .then(()=>{
+    console.log(`app is running on port ${port} and Database is connected`);
+  }). catch((err)=>{
+    console.log("Database not connected");
+    console.log(err);
+  
+  })
+  
+  
 });
 
 
